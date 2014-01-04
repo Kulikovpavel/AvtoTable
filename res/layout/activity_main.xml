@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="МКПП"
+                android:id="@+id/mkpp"
+                android:checked="true"
+                android:onClick="onCheckBoxClick"/>
+
+            <CheckBox
+                android:onClick="onCheckBoxClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="АКПП"
+                android:id="@+id/akpp"
+                android:checked="true" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:text="Добавить"
+                android:id="@+id/button"
+                android:onClick="onInsertClick"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:onClick="onCheckBoxClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Теория"
+                android:id="@+id/theory"
+                android:checked="true" />
+
+            <CheckBox
+                android:onClick="onCheckBoxClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Площадка"
+                android:id="@+id/trainingGround"
+                android:checked="true" />
+
+            <CheckBox
+                android:onClick="onCheckBoxClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Город"
+                android:id="@+id/city"
+                android:checked="true" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@android:id/list" />
+
+
+    </LinearLayout>
+</FrameLayout>
