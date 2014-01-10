@@ -43,18 +43,18 @@ public class MainActivity extends ListActivity  {
 
     private void confirmDeletion(final Student student) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Вы уверены, что хотите удалить запись?")
-                .setTitle("Подтвердите удаление");
+        builder.setMessage("Are You sure want to delete this")
+                .setTitle("Confirm deleting");
 
 
-        builder.setPositiveButton("Удалить", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(getString(R.string.delete), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 // User clicked OK button
                 datasource.deleteStudent(student);
                 renew_list();
             }
         });
-        builder.setNegativeButton("Отменить", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 // User cancelled the dialog
             }

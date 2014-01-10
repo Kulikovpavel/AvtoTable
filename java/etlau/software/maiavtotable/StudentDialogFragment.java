@@ -95,7 +95,7 @@ public class StudentDialogFragment extends DialogFragment {
 
         builder.setView(dialogView);
 
-        builder.setPositiveButton("Сохранить", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 Student student = new Student();
 
@@ -128,7 +128,7 @@ public class StudentDialogFragment extends DialogFragment {
                 callingActivity.renew_list();
             }
         });
-        builder.setNegativeButton("Отменить", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
             }
         });

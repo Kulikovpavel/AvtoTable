@@ -21,7 +21,7 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="МКПП"
+                android:text="@string/mkpp"
                 android:id="@+id/mkpp"
                 android:checked="true"
                 android:onClick="onCheckBoxClick"/>
@@ -30,7 +30,7 @@
                 android:onClick="onCheckBoxClick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="АКПП"
+                android:text="@string/akpp"
                 android:id="@+id/akpp"
                 android:checked="true" />
 
@@ -45,7 +45,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:gravity="right"
-                android:text="Добавить"
+                android:text="@string/add"
                 android:id="@+id/button"
                 android:onClick="onInsertClick"/>
         </LinearLayout>
@@ -59,7 +59,7 @@
                 android:onClick="onCheckBoxClick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Теория"
+                android:text="@string/theory"
                 android:id="@+id/theory"
                 android:checked="true" />
 
@@ -67,7 +67,7 @@
                 android:onClick="onCheckBoxClick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Площадка"
+                android:text="@string/training"
                 android:id="@+id/trainingGround"
                 android:checked="true" />
 
@@ -75,7 +75,7 @@
                 android:onClick="onCheckBoxClick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Город"
+                android:text="@string/city"
                 android:id="@+id/city"
                 android:checked="true" />
         </LinearLayout>

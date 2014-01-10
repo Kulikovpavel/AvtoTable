@@ -1,6 +1,8 @@
 package etlau.software.maiavtotable;
 
 
+import android.content.res.Resources;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -15,8 +17,8 @@ public class Student {
     public Calendar examdate = Calendar.getInstance();
 
     public String name= "";
-    private final String[] EXAMTYPE = {"Теория", "Площадка", "Город"};
-    private final String[] KPPTYPE = {"МКПП", "АКПП"};
+    private final String[] EXAMTYPE = {"Theory", "Practice", "City"};
+    private final String[] KPPTYPE = {"MKPP", "AKPP"};
     public final static SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
     // Will be used by the ArrayAdapter in the ListView

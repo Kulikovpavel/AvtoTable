@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class MaiAvtoDB extends SQLiteOpenHelper {
 
-    private static final int DB_VERSION = 1;
+    private static final int DB_VERSION = 8;
     private static final String DB_NAME = "maiavto";
 
     public static final String TABLE_NAME = "students";
@@ -31,7 +31,7 @@ public class MaiAvtoDB extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        sqLiteDatabase.execSQL(DROP_TABLE);
-        onCreate(sqLiteDatabase);
+        //sqLiteDatabase.execSQL(DROP_TABLE);
+        //onCreate(sqLiteDatabase);
     }
 }

@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:id="@+id/editTextName"
-                android:hint="ФИО"
+                android:hint="Name"
                 android:inputType="textCapWords" />
 
             <EditText
@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:id="@+id/editTextGroup"
-                android:hint="Группа" />
+                android:hint="Group" />
 
             <RadioGroup
                 android:layout_width="wrap_content"
@@ -42,13 +42,13 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="МКПП"
+                    android:text="@string/mkpp"
                     android:id="@+id/radioButtonMKPP" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="АКПП"
+                    android:text="@string/akpp"
                     android:id="@+id/radioButtonAKPP" />
             </RadioGroup>
 
@@ -61,21 +61,22 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Теория"
+                    android:text="@string/theory"
                     android:id="@+id/radioButtonTheory" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Город"
-                    android:id="@+id/radioButtonCity" />
+                    android:text="@string/training"
+                    android:id="@+id/radioButtonPractice"
+                    android:checked="false" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Площадка"
-                    android:id="@+id/radioButtonPractice"
-                    android:checked="false" />
+                    android:text="@string/city"
+                    android:id="@+id/radioButtonCity" />
+
             </RadioGroup>
 
         </LinearLayout>
@@ -92,13 +93,14 @@
                 android:id="@+id/editComment"
                 android:autoText="false"
                 android:inputType="text"
-                android:hint="Комментарий" />
+                android:hint="Comments" />
 
             <DatePicker
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/datePicker"
                 android:calendarViewShown="false" />
+
         </LinearLayout>
     </LinearLayout>
 </FrameLayout>
